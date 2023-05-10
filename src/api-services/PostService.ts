@@ -19,7 +19,7 @@ export const postApi = createApi({
       }),
       providesTags: ['Posts'], //для ревалидации изменений
     }),
-    //автоматически создаётся хук useCreatePostMutation()
+    // автоматически создаётся хук useCreatePostMutation()
     createPost: build.mutation<IPost, IPost>({
       //IPost[] - то что вернётся, number -аргумент
       query: (post) => ({
